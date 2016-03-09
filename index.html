@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<htmle lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cashier</title>
+  <style>
+    input, select, button {
+      font-size: 1.5em;
+    }
+    input {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      height: 2rem;
+      text-align: center;
+    }
+  </style>
+  <script type="text/javascript" src="commodity.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<fieldset>
+  <legend>Select Test Data</legend>
+  <section>
+    <select id="singleSel">
+      <option value="test-data-1">Test Data 1</option>
+      <option value="test-data-2">Test Data 2</option>
+      <option value="test-data-3">Test Data 3</option>
+      <option value="test-data-4">Test Data 4</option>
+    </select>
+  </section>
+</fieldset>
+
+<fieldset>
+  <legend>Input the discount</legend>
+  <p>Input the bar code for 5% off:
+    <input id="discount" type="text" />
+  </p>
+  <p>Input the bar code for Buy two get one free:
+    <input id="free" type="text" />
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Print</legend>
+<button id="print">Print</button>
+</fieldset>
+
+<fieldset>
+  <legend>Bill</legend>
+  <div id="result"></div>
+</fieldset>
+</body>
+</htmle>
