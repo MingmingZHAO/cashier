@@ -186,6 +186,12 @@ function cleanElement() {
 function initElement() {
   console.log('cashier::initElement');
   bill = document.getElementById('singleSel');
+  for(var i = 1; i <= bills.length; i++) {
+    var select = document.createElement('option');
+    select.innerHTML = 'Test Data ' + i;
+    bill.appendChild(select);
+  }
+
   discount = document.getElementById('discount');
   free = document.getElementById('free');
   print = document.getElementById('print');
